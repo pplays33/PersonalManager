@@ -1,0 +1,116 @@
+.header{
+    height: 44px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+.container_nav{
+    max-width: 900px;
+    display: flex;
+}
+.ul-container{
+    display: flex;
+    justify-content: space-between;
+}
+.item-nav{
+    margin-right: 20px;
+}
+.Link{
+    text-decoration: none;
+    color: black;
+}
+
+/*start main*/
+
+.container-main{
+    padding: 50px 50px 50px 50px;
+}
+.Titel{
+    font-size: 35px;
+    margin-bottom: 150px;
+}
+.wrapper-main-items{
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+.item-main{
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 300px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: white;
+    border: 2px solid #0c8bc5;
+    border-radius: 10px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.item-main:hover{
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.button-task{
+        background-color: white;
+        border: 2px solid #00BFFF;
+        border-radius: 10px;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.button-task:hover{
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.label{
+    cursor: pointer;
+}
+.inputTaskCheckbox{
+    border: 1px solid #3F72AF;
+    border-radius: 2px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    background: green;
+}
+.inputTaskCheckbox:hover {
+    background-color: green;
+}
+
+
+.inputTaskEdit{
+    border: 1px solid #3F72AF;
+    border-radius: 2px;
+    width: 100px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: goldenrod;
+}  
+.inputTaskEdit:hover{
+    background-color: green;
+}   
+.inputTaskRemove{
+    border: 1px solid #3F72AF;
+    border-radius: 2px;
+    width: 100px;
+    height: 20px;
+    background-color: red;
+}  
+
+/* start Footer */
+
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
