@@ -9,7 +9,7 @@ export const generateId = () => (
 
 export default function HomeLayout(){
     const [titel, setTitel] = useState();
-    const [check, setCheak] = useState(false);
+    const [inputValue, setInputValue] = useState("");
 
     const [tasks, setAddTask] = useState(
         [
@@ -32,30 +32,59 @@ export default function HomeLayout(){
         ]
     );
 
+
     const ClickHendlerCheckBox = (id) => {
         const newTasks = [...tasks];
         newTasks[id].check = (!tasks[id].check);
         setAddTask(newTasks);
         //console.log(tasks[id]);
     }
+    const AddTask = () => {
+        if(!inputValue){
+            return;
+        }
+        console.log(inputValue)
+        const newTasks = [...tasks, {titel: inputValue, check: false}];
+        setAddTask(newTasks);
+    }
 
     return(
         <main className='container-main'>
             <h1 className='Titel'>this's your <br/>  private personal manager</h1>
+            
+            <div className='container-new-task'>
+                <label className= 'label-text'>
+                    <textarea
+                        type="textarea"
+                        className= 'inputTaskText'
+                        value={inputValue}
+                        placeholder='create this note...'
+                        onChange={(event) => {
+                                setInputValue(event.target.value)
+                            }
+                        }
+                    ></textarea>
+                </label>
+                <button className='button-task'
+                    onClick={() => AddTask()}
+                >add task</button>
+            </div>            
+            
+            
             <div className='wrapper-main-items'>
                 {
                     tasks.map((value, index) => (
                         < Task  
                             key={generateId()}
                             id={index}
-                            titel = {value.check === true ? "True" : "false"}
+                            titel = {value.titel}
                             checked={value.check}
                             onClick={ClickHendlerCheckBox}
                         />
                     ))
                 }
             </div>
-            <button className='button-task'>add task</button>
+
         </main>
     );
 }

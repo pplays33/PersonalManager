@@ -10,7 +10,7 @@ export default function Task({id, titel, checked, onClick}) {
                     checked = {checked}
                     onClick={() => onClick(id)}
                 />
-                <h3 className= 'inputTaskTitle'> {titel} dadawdadaaifhuafh ahao hoaw uw afaodsjfajlflajdfjall  asdaf w wwa </h3>
+                <h3 className= 'inputTaskTitle'> {titel} </h3>
             </label>
             <button
                 onClick={() => { }}
