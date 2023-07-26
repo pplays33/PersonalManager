@@ -12,27 +12,14 @@ export default function HomeLayout(){
     const [inputValue, setInputValue] = useState("");
 
     const [tasks, setAddTask] = useState(
-        [
-            {
-                titel: titel ?? "titel default",
-                check: false,
-            },
-            {
-                titel: titel ?? "titel default",
-                check: false,
-            },
-            {
-                titel: titel ?? "titel default",
-                check: false,
-            },
-            {
-                titel: titel ?? "titel default",
-                check: false,
-            },
-        ]
+        []
     );
 
-
+    const HendelerEditClick = (id, newTitel) => {
+        const newTasks = [...tasks];
+        newTasks[id].titel = newTitel;
+        setAddTask(newTasks);
+    }
     const ClickHendlerCheckBox = (id) => {
         const newTasks = [...tasks];
         newTasks[id].check = (!tasks[id].check);
@@ -48,9 +35,10 @@ export default function HomeLayout(){
         setAddTask(newTasks);
     }
 
+
     return(
         <main className='container-main'>
-            <h1 className='Titel'>this's your <br/>  private personal manager</h1>
+            <h1 className='Titel'>this's your <br/> TTTTT  private personal manager</h1>
             
             <div className='container-new-task'>
                 <label className= 'label-text'>
@@ -66,7 +54,10 @@ export default function HomeLayout(){
                     ></textarea>
                 </label>
                 <button className='button-task'
-                    onClick={() => AddTask()}
+                    onClick={() => {
+                        AddTask();
+                        setInputValue("");  
+                    }}
                 >add task</button>
             </div>            
             
@@ -80,6 +71,7 @@ export default function HomeLayout(){
                             titel = {value.titel}
                             checked={value.check}
                             onClick={ClickHendlerCheckBox}
+                            HendelerEditClick = {HendelerEditClick}
                         />
                     ))
                 }

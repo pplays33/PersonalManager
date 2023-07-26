@@ -46,7 +46,8 @@
     min-height: 300px;
     margin-right: 20px;
     display: flex;
-    justify-content: center;
+    flex-flow: column wrap;
+    justify-content: space-between;
     align-items: start;
     background-color: white;
     border: 2px solid #19213D;
@@ -74,7 +75,9 @@
 }
 
 .label{
+    max-width: 100%;
     cursor: pointer;
+    line-height: 30px;
 }
 .inputTaskCheckbox{
     border: 1px solid #3F72AF;
@@ -109,7 +112,16 @@
     height: 20px;
     background-color: #19213D;
     color: white;
-}  
+}
+.inputNewTitel{
+    margin-top: 20px;
+}
+.inputTaskTitle{
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+
 .container-new-task{
     width: 100%;
     display: flex;
