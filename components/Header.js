@@ -12,7 +12,7 @@ export default function Header() {
             <nav className='container_nav'>
                 <ul className='ul-container'>
                     <li className='item-nav'>
-                        <Link href='/about' className ='Link'>budget</Link>
+                        <Link href='/budget' className ='Link'>budget</Link>
                     </li>
                     <li className='item-nav'>
                          daily Link

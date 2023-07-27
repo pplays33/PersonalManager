@@ -1,0 +1,29 @@
+.container-budget{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+}
+.budget{
+    width: 400px;
+    min-height: 300px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #fe0d01;
+    border-radius: 10%;
+    
+    
+}
+.Sum{
+    cursor: pointer;
+    margin-left: 20px;
+    line-height: 40px;
+    font-size: 18px;
+}
