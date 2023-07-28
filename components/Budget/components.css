@@ -31,7 +31,11 @@
     font-size: 16px;
     margin-bottom: 20px;
 }
-
+.set-expenses{
+    background-color: blanchedalmond;
+    border: 1px solid #6c1747;
+    border-radius: 10px;
+}
 .sumSave-button{
     margin-left: 5px;
     background-color: white;
@@ -45,7 +49,7 @@
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 .input-sum{
-    background-color: white;
-    border: 1px solid #6c1747;
+    background-color: blanchedalmond;
     border-radius: 10px;
+    color: black;
 }

@@ -15,7 +15,7 @@ export default function Header() {
                         <Link href='/budget' className ='Link'>budget</Link>
                     </li>
                     <li className='item-nav'>
-                         daily Link
+                    <Link href='/dailylink' className ='Link'> daily Link </Link>
                     </li>
                 </ul>
             </nav> 

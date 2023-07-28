@@ -1,0 +1,33 @@
+.main-list-container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.label-link{
+    border-radius: 10px;
+    color: black;
+}
+.input-link{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: black
+}
+.SaveLink-button{
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: black;
+}
+.ul-list-container{
+    display: flex;
+    align-self: flex-start;
+    flex-flow: column wrap;
+    word-break: break-all;
+}
+.vertical-line {
+    margin-bottom: 15px;
+    width: 60px;
+    height: 2px; 
+    background: palegoldenrod;
+}
