@@ -9,15 +9,15 @@
     background-color: blanchedalmond;
 }
 .budget{
-    width: 400px;
+    width: 60%;
     min-height: 300px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     border: 10px solid #fe0d01;
-    border-radius: 10%;
+    border-radius: 10px;
     
     
 }
@@ -26,4 +26,26 @@
     margin-left: 20px;
     line-height: 40px;
     font-size: 18px;
+}
+.About{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.sumSave-button{
+    margin-left: 5px;
+    background-color: white;
+    border: 2px solid #00BFFF;
+    border-radius: 10px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.sumSave-button:hover{
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.input-sum{
+    background-color: white;
+    border: 1px solid #6c1747;
+    border-radius: 10px;
 }
