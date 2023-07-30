@@ -38,7 +38,7 @@ export default function HomeLayout(){
 
     return(
         <main className='container-main'>
-            <h1 className='Titel'>this's your <br/> TTTTT  private personal manager</h1>
+            <h1 className='Titel'>this's your <br/> Personal manager</h1>
             
             <div className='container-new-task'>
                 <label className= 'label-text'>
